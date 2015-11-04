@@ -16,14 +16,17 @@ public class PlayBattleShip {
         locations.add("" + (randomNum + 1));
         locations.add("" + (randomNum + 2));
         
+        battleShip.setLocationCells(locations);
+        
         boolean isAlive = true;
         
         while(isAlive) {
             String guess = helper.getUserInput("enter a number");
+            numOfGuesses++;
             
             String result = battleShip.checkYourself(guess);
-            numOfGuesses++;
-            if (result.equals("kill")) {
+            
+            if ( result.equals("kill") ) {
                 isAlive = false;
                 System.out.println("You took " + numOfGuesses + " guesses");
             }

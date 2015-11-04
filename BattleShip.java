@@ -13,6 +13,7 @@ public class BattleShip {
         int index = locationCells.indexOf(userInput);
         
         if (index >= 0) {
+            System.out.println("userInput = " + userInput + " was a hit");
             locationCells.remove(index);
             
             if ( locationCells.isEmpty() ){
