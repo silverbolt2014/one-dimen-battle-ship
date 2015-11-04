@@ -9,9 +9,9 @@ public class PlayBattleShip {
         
         BattleShip battleShip = new BattleShip();
         
-        int randomNum = (int) (Math.random() * 5);
-        
         ArrayList<String> locations = new ArrayList<String>();
+        
+        int randomNum = (int) (Math.random() * 5);
         locations.add("" + randomNum);
         locations.add("" + (randomNum + 1));
         locations.add("" + (randomNum + 2));
