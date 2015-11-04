@@ -21,5 +21,6 @@ public class BattleShip {
                 result = "hit";
             }
         }
+        return result;
     }
 }
